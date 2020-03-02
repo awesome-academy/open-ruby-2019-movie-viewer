@@ -1,2 +1,45 @@
 en:
-  hello: "Hello world"
+  layouts:
+    header:
+      sign_up: "Sign up"
+      log_in: "Log in"
+      search_placeholder: "Movie..."
+      show_all: "SHOW ALL"
+      lastest_trailers: "LATEST TRAILERS"
+      top_rated: "TOP RATED"
+      most_commented: "MOST COMMENTED"
+    footer:
+      about: "About TopMovie"
+      know: "GET TO KNOW US"
+      become: "BECOME A RETAILER"
+      job: "JOB OPENINGS"
+      events: "EVENTS"
+      location: "Our location"
+      help: "Please Help Us"
+      contact: "CONTACT"
+      faq: "FAQ"
+      store_locator: "STORE LOCATOR"
+      new_user: "NEW USERS"
+      order_status: "ORDER STATUS"
+      connect: "CONNECT"
+      with: "with"
+      us: "US"
+  static_pages:
+    lastest_trailer:
+      title: "LASTEST TRAILERS"
+      see_all: "See all"
+      name: "X-MAN"
+      rating: "RATING"
+      number_comment: "12"
+    most_comment:
+      title: "MOST COMMENTD"
+      see_all: "See all"
+      name: "Spider Man"
+      rating: "RATING"
+      number_comment: "12"
+    top_rated:
+      title: "TOP RATED"
+      see_all: "See all"
+      name: "Eagle Eye"
+      rating: "RATING"
+      number_comment: "12"

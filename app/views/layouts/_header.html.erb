@@ -1,0 +1,44 @@
+<div id="header">
+  <h1 id="logo"><%= link_to "#" %></h1>
+  <div class="social">
+    <ul>
+      <li><%= link_to t(".sign_up"), "#" %></li>
+      <li><%= link_to t(".log_in"), "#" %></li>
+    </ul>
+  </div>
+  <div id="navigation">
+    <ul>
+      <li class="float-right">
+        <section class="search">
+          <%= form_tag("#", method: :get, class: "searchbar") do |f| %>
+            <%= text_field_tag :search, "", class: "search_input", placeholder: t(".search_placeholder") %>
+          <% end %>
+        </section>
+      </li>
+    </ul>
+  </div>
+  <div id="sub-navigation">
+    <ul>
+      <li>
+        <%= link_to "#" do %>
+          <%= t ".show_all" %>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to "#" do %>
+          <%= t ".lastest_trailers" %>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to "#" do %>
+          <%= t ".top_rated" %>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to "#" do %>
+          <%= t ".most_commented" %>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="head">
+  <h2><%= t ".title" %></h2>
+  <p class="text-right">
+    <%= link_to t(".see_all"), "#" %>
+  </p>
+</div>
+<div class="movie">
+  <div class="movie-image">
+    <span class="play">
+      <span class="name"><%= t ".name" %></span>
+    </span> 
+    <%= link_to "#" do %>
+      <%= image_tag Settings.lastest_trailer %>
+    <% end %>
+  </div>
+  <div class="rating">
+    <p><%= t ".rating" %></p>
+    <div class="stars">
+      <div class="stars-in"></div>
+    </div>
+    <span class="comments"><%= t ".number_comment" %></span> </div>
+</div>
+<div class="cl">&nbsp;</div>
