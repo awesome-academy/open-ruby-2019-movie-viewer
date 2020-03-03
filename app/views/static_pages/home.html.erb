@@ -1,0 +1,38 @@
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+</ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag Settings.slide1, class:"d-block w-100" %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag Settings.slide2, class:"d-block w-100" %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag Settings.slide3, class:"d-block w-100" %>
+    </div>
+  </div>
+  <%= link_to "#demo", class:"carousel-control-prev", data: {slide: "prev"} do %>
+    <span class="carousel-control-prev-icon"></span>
+  <% end %>
+  <%= link_to "#demo", class:"carousel-control-next", data: {slide: "next"} do %>
+    <span class="carousel-control-next-icon"></span>
+  <% end %>
+</div>
+<div id="main">
+  <div id="content">
+    <div class="box">
+      <%= render "static_pages/lastest_trailer" %>
+    </div>
+    <div class="box">
+      <%= render "static_pages/top_rated" %>
+    </div>
+    <div class="box">
+      <%= render "static_pages/most_comment" %>
+    </div>
+  </div>
+  <div class="cl">&nbsp;</div>
+</div>
