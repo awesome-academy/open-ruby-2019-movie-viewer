@@ -19,6 +19,8 @@ gem "bootsnap", ">= 1.4.2", require: false
 gem "bootstrap", "~> 4.4.1"
 gem "font_awesome5_rails"
 gem "config"
+gem "devise"
+gem "figaro"
 
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
