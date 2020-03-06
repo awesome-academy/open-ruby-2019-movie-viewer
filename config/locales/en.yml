@@ -25,6 +25,15 @@ en:
       connect: "CONNECT"
       with: "with"
       us: "US"
+    admin:
+      application:
+        title: "Admin Top Movie"
+      header:
+        log_out: "Log out"
+      slidebar:
+        user: "User"
+        title: "Admin Top Movie"
+        movie: "Movie"
   static_pages:
     lastest_trailer:
       title: "LASTEST TRAILERS"
@@ -127,3 +136,31 @@ en:
       not_saved:
         one: "1 error prohibited this %{resource} from being saved:"
         other: "%{count} errors prohibited this %{resource} from being saved:"
+  admins:
+    sessions:
+      new:
+        email_placeholder: "Email..."
+        password_placeholder: "Password"
+        title: "Admin Login"
+        log_in: "Log in"
+    shared:
+      links:
+        log_in: "Log in"
+        confirmation: "Didn't receive confirmation instructions?"
+        sign_in: "Sign in with "
+    home:
+      welcome: "Welcom Admin"
+    registrations:
+      edit:
+        edit: "Edit"
+        current: "Currently waiting confirmation for: "
+        blank: "(leave blank if you don't want to change it)"
+        current_password: "(we need your current password to confirm your changes)"
+        updae: "Update"
+        cancel: "Cancel my account"
+        unhappy: "Unhappy? "
+        back: "Back"
+        confirm: "Are you sure?"
+        minimum: " characters minimum"
+      new:
+        title: "Sign up"
