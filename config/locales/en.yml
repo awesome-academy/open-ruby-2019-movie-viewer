@@ -191,3 +191,14 @@ en:
         edit: "Edit"
         delete: "Delete"
         sure: "You sure"
+    users:
+      destroy:
+        success_destroy_user: "This user was destroyed"
+        danger_destroy_user: "You couldn't destroy this user"
+      index:
+        id: "ID"
+        full_name: "Full Name"
+        email: "Email"
+        action: "Action"
+      user:
+        confirm: "Are you sure to delete this user?"
