@@ -4,3 +4,7 @@ require("@rails/activestorage").start()
 require("channels")
 require("jquery")
 require("bootstrap")
+require("packs/datatable")
+require("datatables.net-bs4")
+import $ from "jquery";
+global.$ = jQuery;

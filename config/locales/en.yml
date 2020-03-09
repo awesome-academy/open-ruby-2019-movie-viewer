@@ -34,6 +34,7 @@ en:
         user: "User"
         title: "Admin Top Movie"
         movie: "Movie"
+        category: "Category"
   static_pages:
     lastest_trailer:
       title: "LASTEST TRAILERS"
@@ -164,3 +165,29 @@ en:
         minimum: " characters minimum"
       new:
         title: "Sign up"
+    categories:
+      new:
+        submit: "Submit"
+        new: "New"
+        success: "create success"
+      edit:
+        submit: "Submit"
+      index:
+        add: " Add"
+        id: "Id"
+        name: "Name"
+        edit: "Edit"
+        delete: "Delete"
+      create:
+        error: "Create error"
+        success: "Create successful"
+      update:
+        success: "Update successful"
+        not_update: "Updated furniture"
+      destroy:
+        delete_category: "Delete successfull"
+        not_deleted: "Delete successfull"
+      category:
+        edit: "Edit"
+        delete: "Delete"
+        sure: "You sure"
