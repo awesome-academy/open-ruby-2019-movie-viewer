@@ -59,7 +59,7 @@ class Admins::FilmsController < Admins::BaseController
     @film = Film.find_by id: params[:id]
 
     return if @film
-    flash[:danger] = t ".not_found_film" 
+    flash[:danger] = t ".not_found_film"
     redirect_to root_path
   end
 end

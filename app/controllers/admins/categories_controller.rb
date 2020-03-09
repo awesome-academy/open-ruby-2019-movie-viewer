@@ -2,7 +2,7 @@ class Admins::CategoriesController < ApplicationController
   before_action :load_category, only: %i(edit update destroy)
 
   def index
-    @categories = Category.all.create_at_desc.select_limmit
+    @categories = Category.create_at_desc.select_category.last Settings.limmit_category
     @category = Category.new
   end
 
