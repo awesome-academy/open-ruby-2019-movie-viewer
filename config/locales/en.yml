@@ -235,4 +235,6 @@ en:
   films:
     index:
       hd: "HD-Vietsub"
-      not_found: "not found film"
+  search_films:
+    index:
+      no_suitable: "Search results do not match: "

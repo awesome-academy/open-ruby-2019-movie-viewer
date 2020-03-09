@@ -14,14 +14,14 @@ gem "turbolinks", "~> 5"
 gem "webpacker", "~> 4.0"
 gem "pry-rails"
 gem "mysql2", ">= 0.4.4", "< 0.6.0"
-gem "jbuilder", "~> 2.7"
-gem "bootsnap", ">= 1.4.2", require: false
 gem "bootstrap", "~> 4.4.1"
 gem "font_awesome5_rails"
 gem "config"
 gem "devise"
 gem "figaro"
 gem "activestorage-dropbox"
+gem "kaminari"
+gem "bootstrap4-kaminari-views"
 
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]

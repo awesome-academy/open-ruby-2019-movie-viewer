@@ -937,3 +937,27 @@ div.movie-thumbnail img {
   margin-bottom: 40px;
   color: $aqua;
 }
+
+.submit-search {
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: $white;
+  text-decoration: none;
+}
+
+div.paginate {
+  text-align: center;
+}
+
+ul.pagination {
+  display: inline-flex;
+  margin: 0 auto;
+}
+.search-index {
+  margin-top: 100px;
+}
