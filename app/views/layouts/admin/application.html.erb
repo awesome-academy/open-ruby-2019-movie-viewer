@@ -8,18 +8,15 @@
     <%= javascript_pack_tag "admin_application", "data-turbolinks-track": "reload" %>
   </head>
   <body>
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
     <div id="page-top">
       <div id="wrapper">
         <%= render "layouts/admin/slidebar" %>
         <div id="content-wrapper" class="d-flex flex-column">
           <div class="content">
             <%= render "layouts/admin/header" %>
+              <% flash.each do |message_type, message| %>
+                <div class="alert alert-<%= message_type %>"><%= message %></div>
+              <% end %>
             <%= yield %>
           </div>
         </div>

@@ -284,7 +284,7 @@ a:focus {
   margin: 0 0 1rem 0;
 }
 
-.sidebar .nav-item .collapse .collapse-inner 
+.sidebar .nav-item .collapse .collapse-inner
   .collapse-header, .sidebar .nav-item .collapsing .collapse-inner .collapse-header {
   margin: 0;
   white-space: nowrap;
@@ -560,4 +560,8 @@ a:focus {
 
 .sidebar-dark.toggled #sidebarToggle::after {
   color: $black;
+}
+
+#category_list {
+  width: 1000px;
 }
