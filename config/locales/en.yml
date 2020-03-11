@@ -220,3 +220,24 @@ en:
       create:
         error: "Create error"
         success: "Create successful"
+        aciton: "Action"
+      film:
+        confirm: "Are you sure to delete this film?"
+      edit:
+        submit: "Update"
+        not_found_film: "Not found this film"
+        movie: "Movie"
+        trailer: "Trailer"
+        image: "Image"
+        time: "Time (minutes)"
+        release_date: "Release date"
+        description: "Description"
+        resolution: "Resolution"
+      update:
+        not_found_film: "Not found this film"
+        success: "Update success"
+        danger: "Can not update this film!"
+      destroy:
+        success_destroy_film: "This film was destroyed"
+        danger_destroy_film: "You couldn't destroy this film"
+        not_found_film: "Not found this film"
