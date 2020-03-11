@@ -796,6 +796,11 @@ input:focus {
   color: $gray;
 }
 
+.titlebar .next-back span a:hover {
+  text-decoration: none;
+  color: $dimgray;
+}
+
 .titlebar .next-back span {
   border-right: 1px solid $white;
   padding: 0 8px 0 5px;
@@ -936,6 +941,40 @@ div.movie-thumbnail img {
   margin-top: 10px;
   margin-bottom: 40px;
   color: $aqua;
+  max-width: 100%;
+  margin-left: 10px;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+  color: $yellow;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  background-color: $black;
+}
+
+.card-text{
+  font-size: 13px;
+}
+
+div.text-title {
+  color: $yellow;
+  font-size: 15px;
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: $black;
+}
+
+.video_show {
+  margin-top: 50px;
 }
 
 .submit-search {

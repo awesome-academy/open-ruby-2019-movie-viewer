@@ -10,3 +10,5 @@ limmit_category: 25
 take_category: 3
 limmit_films_home: 5
 search_films: 10
+category_home: 7
+release_date: "%d/%m/%Y - %H:%M"

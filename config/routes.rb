@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   devise_for :admins
   resources :films, only: :index
   resources :search_films, only: :index
+  resources :films, only: %i(index show)
 
   namespace :admins do
     resources :users
