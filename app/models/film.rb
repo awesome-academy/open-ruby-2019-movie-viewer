@@ -1,6 +1,7 @@
 class Film < ApplicationRecord
   FILM_PARAMS = [:name, :country, :movie, :trailer, :image, :category_id,
     film_profile_attributes:[:id, :film_id, :release_date, :time, :resolution, :description]].freeze
+  SELECT_FILM_HOME = %i(id name country movie trailer image category_id).freeze
 
   belongs_to :category
   has_one :film_profile, dependent: :destroy

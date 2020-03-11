@@ -13,13 +13,39 @@ class Admins::FilmsController < Admins::BaseController
   def create
     @film = Film.new films_params
 
-    if @film.save
+    ActiveRecord::Base.transaction do
+      if @film.save
+        @film_profile = @film.build_film_profile
+
+        save_film_profile @film_profile
+      else
+        flash[:danger] =  t ".error"
+        render :new
+      end
+    end
+  end
+
+  def edit; end
+
+  def update
+    if @film.update update_film_params
       flash[:success] = t ".success"
       redirect_to admins_films_path
     else
-      flash[:danger] =  t ".error"
-      render :new
+      flash[:danger] = t ".danger"
+      render :edit
     end
+  end
+
+  def destroy
+    @film.destroy
+
+    if @film.destroyed?
+      flash[:success] = t ".success_destroy_film"
+    else
+      flash[:danger] = t ".danger_destroy_film"
+    end
+    redirect_to request.referrer
   end
 
   def edit; end
