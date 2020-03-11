@@ -21,6 +21,7 @@ gem "font_awesome5_rails"
 gem "config"
 gem "devise"
 gem "figaro"
+gem "activestorage-dropbox"
 
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]

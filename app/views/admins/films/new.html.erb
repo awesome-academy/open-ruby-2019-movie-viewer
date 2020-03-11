@@ -1,0 +1,19 @@
+<div class="container">
+  <%= form_for [:admins, @film] do |f| %>
+    <%= f.label :name, t(".name") %>
+    <%= f.text_field :name, class: "form-control", required: true %><br>
+    <%= f.label :country, t(".country") %>
+    <%= f.text_field :country, class: "form-control", required: true %><br>
+    <%= f.label :movie, t(".movie") %>
+    <%= f.file_field :movie, class: "form-control", required: true %><br>
+    <%= f.label :trailer, t(".trailer") %>
+    <%= f.file_field :trailer, class: "form-control", required: true %><br>
+    <%= f.label :image, t(".image") %>
+    <%= f.file_field :image, class: "form-control", required: true %><br>
+    <div class="field">
+      <%= f.label :category_id %><br>
+      <%= f.select :category_id, options_for_select(Category.all.map{|s|[s.name, s.id]}), class: "form-control" %>
+    </div><br/>
+    <%= f.submit t(".submit"), class: "btn btn-primary" %>
+  <% end %>
+</div>
