@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :films, only: :index
   resources :search_films, only: :index
   resources :films, only: %i(index show)
+  post "/rate", to: "rater#create", as: "rate"
 
   namespace :admins do
     resources :users

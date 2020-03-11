@@ -13,6 +13,8 @@ class Film < ApplicationRecord
 
   accepts_nested_attributes_for :film_profile
 
+  ratyrate_rateable "movie"
+
   validates :name, :movie, :trailer, :image, presence: true
 
   scope :create_at_desc, -> {order created_at: :desc}
