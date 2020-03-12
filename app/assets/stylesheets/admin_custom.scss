@@ -176,12 +176,6 @@ mark, .mark {
   margin-left: auto;
 }
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
 .bg-light {
   background-color: $white;
 }
@@ -562,6 +556,6 @@ a:focus {
   color: $black;
 }
 
-#category_list {
+#category_list, table#list_users {
   width: 1000px;
 }
