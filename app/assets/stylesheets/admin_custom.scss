@@ -556,6 +556,22 @@ a:focus {
   color: $black;
 }
 
-#category_list, table#list_users {
+#category_list, #list_users, #movie_list {
   width: 1000px;
+}
+
+#film_category_id {
+  height: 40px;
+}
+
+#movie_list td {
+  video {
+    width: 150px;
+    height: auto;
+  }
+
+  img {
+    width: 100px;
+    height: 100px ;
+  }
 }

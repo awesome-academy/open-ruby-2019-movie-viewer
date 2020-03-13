@@ -202,3 +202,21 @@ en:
         action: "Action"
       user:
         confirm: "Are you sure to delete this user?"
+    films:
+      new:
+        submit: "Submit"
+        name: "Name"
+        country: "Country"
+        movie: "Movie"
+        trailer: "Trailer"
+        image: "Image"
+      index:
+        id: "Id"
+        name: "Name"
+        country: "Country"
+        movie: "Movie"
+        trailer: "Trailer"
+        image: "Image"
+      create:
+        error: "Create error"
+        success: "Create successful"

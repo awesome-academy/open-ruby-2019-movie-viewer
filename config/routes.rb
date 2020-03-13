@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   namespace :admins do
     resources :users
     resources :categories, except: :show
+    resources :films
   end
 end
