@@ -1,42 +1,57 @@
 <% if admin_signed_in? %>
   <%= render "admins/home" %>
 <% else %>
-  <div id="demo" class="carousel slide" data-ride="carousel">
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <%= image_tag Settings.slide1, class: "d-block w-100" %>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag Settings.slide2, class: "d-block w-100" %>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag Settings.slide3, class: "d-block w-100" %>
-      </div>
-    </div>
-    <%= link_to "#demo", class: "carousel-control-prev", data: {slide: "prev"} do %>
-      <span class="carousel-control-prev-icon"></span>
-    <% end %>
-    <%= link_to "#demo", class: "carousel-control-next", data: {slide: "next"} do %>
-      <span class="carousel-control-next-icon"></span>
-    <% end %>
-  </div>
+  <%= render "static_pages/banner" %>
   <div id="main">
     <div id="content">
-      <div class="box">
-        <%= render "static_pages/lastest_trailer" %>
-      </div>
-      <div class="box">
-        <%= render "static_pages/top_rated" %>
-      </div>
-      <div class="box">
-        <%= render "static_pages/most_comment" %>
-      </div>
+      <h2 class="text-center">Top Movie</h2>
+      <div class="container">
+        <div class="row">
+        <div class="new-arrival">
+              <div class="titlebar">
+                <div class="next-back">
+                    <span><a data-slide="prev" href="#Carousel" class="left carousel-control">Back</a></span>
+                    <span><a data-slide="next" href="#Carousel" class="right carousel-control">Next</a></span>
+                  </div>
+              </div>
+              <div class="arrival-product">
+                  <div id="Carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-product">
+                        <div class="carousel-item active">
+                          <div class="arrival-item">
+                              <Ul>
+                                 <% @films.each do |film| %>
+                                    <li>
+                                    <a href="#">
+                                      <%= image_tag film.image, class: "demo-img" %>
+                                    </a>
+                                    </li>
+                                 <% end %>
+                              </Ul>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        </div>
+        <div id="product-text">
+          <h2>Action movie</h2>
+        </div>
+        <div class="row">
+          <% @films.each do |film| %>
+          <div class="movie">
+            <div class="movie-image">
+              <span class="play">
+                <span class="name"><%= film.name %></span>
+              </span>
+              <%= link_to "#" do %>
+                <%= image_tag film.image %>
+              <% end %>
+            </div>
+          </div>
+          <% end %>
+        </div>
+      <div class="cl">&nbsp;</div>
     </div>
-    <div class="cl">&nbsp;</div>
-  </div>
 <% end %>

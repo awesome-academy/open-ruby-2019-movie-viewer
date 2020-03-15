@@ -66,31 +66,14 @@ textarea {
 	text-align: right;
 }
 
-h2 {
-	font-size: 10px;
-	color: $goldenrod;
-	font-weight: bold;
-}
-
-h3 {
-	font-size: 14px;
-	color: $white;
-	font-weight: bold;
-}
-
-h4 {
-	font-size: 14px;
-	color: $goldenrod;
-	font-weight: bold;
-}
-
 #shell {
 	width: 980px;
 	margin: 0 auto;
 }
 
 #header {
-	position: relative;
+  position: relative;
+  height: 120px;
 }
 
 h1#logo {
@@ -198,24 +181,10 @@ h1#logo {
 	border-bottom: 1px dashed $darkslategray;
 }
 
-.box {
-	width: 980px;
-	border-bottom: 1px dashed $darkslategray;
-	padding-bottom: 21px;
-  .head {
-    width: 980px;
-    padding-top: 14px;
-    padding-bottom: 11px;
-    h2 {
-      float: left;
-      display: inline;
-    }
-  }
-  .movie {
-    width: 152px;
-    float: left;
-    margin-right: 40px;
-  }
+.movie {
+  width: 152px;
+  float: left;
+  margin-left: 10px;
 }
 
 .movie-image {
@@ -224,8 +193,8 @@ h1#logo {
 	height: 214px;
 	position: relative;
   img {
-    width: 152px;
-    height: 214px;
+    width: 140px;
+    height: 190px;
   }
   a {
     float: left;
@@ -392,7 +361,7 @@ main {
 }
 
 footer {
-  margin-top: auto;
+  margin-top: 55px;
   width: 100%;
   border-top: 1px solid;
 }
@@ -508,7 +477,8 @@ footer {
 
 .carousel-item {
   img {
-    height: 500px;
+    height: 415px;
+    max-width: 100%;
   }
 }
 
@@ -795,4 +765,69 @@ input:focus {
   .btn.btn-signin:hover, .btn.btn-signin:active, .btn.btn-signin:focus {
       background-color: $green;
   }
+}
+.categpry-group {
+  margin-top: 22px;
+}
+#product-text {
+  margin-left: 15px;
+  color: yellow;
+  font-family: fantasy;
+  margin-top: 65px;
+  border-top: 1px solid;
+  padding-top: 25px;
+}
+.titlebar {
+  overflow: hidden;
+}
+.titlebar .next-back {
+  float: left;
+  margin: 12px 0;
+}
+.titlebar .next-back span a {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: Poppins;
+  color: $white;
+}
+.titlebar .next-back span a:hover {
+  text-decoration: none;
+  color: #888888;
+}
+.titlebar .next-back span {
+  border-right: 1px solid $white;
+  padding: 0 8px 0 5px;
+  display: inline-block;
+  line-height: 10px;
+}
+.titlebar .next-back span:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.carousel {
+  margin-bottom: 0;
+  padding: 0 0 30px 0;
+}
+
+.arrival-product .arrival-item ul {
+  margin: 0;
+  padding: 0;
+}
+.arrival-product .arrival-item ul li {
+  float: left;
+  list-style: none;
+  width: 23%;
+  overflow: hidden;
+  margin-right: 2.6%;
+}
+.arrival-product .arrival-item ul li:last-child {
+  margin-right: 0;
+}
+
+img.demo-img {
+  width: 140px;
+  height: 190px;
+  max-width: 100%;
+  margin-left: 10px;
 }
