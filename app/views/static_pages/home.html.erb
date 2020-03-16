@@ -5,13 +5,7 @@
     <div id="content">
       <div class="row">
         <div class="col-lg-3">
-          <div class="categpry-group">
-            <% @categories.each do |category| %>
-              <%= link_to "#" do %>
-                 <p class= "list-group-item"><%= category.name %></p>
-              <% end %>
-            <% end %>
-          </div>
+          <%= render "static_pages/category" %>
         </div>
         <div class="col-lg-9">
           <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
@@ -22,74 +16,31 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <%= image_tag Settings.slide1, class: "d-block img-fluid", alt: "First slide" %>
+                <%= image_tag Settings.slide1, class: "d-block img-fluid" %>
               </div>
               <div class="carousel-item">
-                <%= image_tag Settings.slide2, class: "d-block img-fluid", alt: "Second slide" %>
+                <%= image_tag Settings.slide2, class: "d-block img-fluid" %>
               </div>
               <div class="carousel-item">
-                <%= image_tag Settings.slide3, class: "d-block img-fluid", alt: "Third slide" %>
+                <%= image_tag Settings.slide3, class: "d-block img-fluid" %>
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
+              <span class="sr-only"><%= t ".perious" %></span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
+              <span class="sr-only"><%= t ".next" %></span>
             </a>
           </div>
         </div>
       </div>
-      <h2 class="text-center">Top Movie</h2>
-      <div class="container">
-        <div class="row">
-        <div class="new-arrival">
-              <div class="titlebar">
-                <div class="next-back">
-                    <span><a data-slide="prev" href="#Carousel" class="left carousel-control">Back</a></span>
-                    <span><a data-slide="next" href="#Carousel" class="right carousel-control">Next</a></span>
-                  </div>
-              </div>
-              <div class="arrival-product">
-                  <div id="Carousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-product">
-                        <div class="carousel-item active">
-                          <div class="arrival-item">
-                              <Ul>
-                                 <% @films.each do |film| %>
-                                    <li>
-                                    <a href="#">
-                                      <%= image_tag film.image, class: "demo-img" %>
-                                    </a>
-                                    </li>
-                                 <% end %>
-                              </Ul>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-              </div>
-        </div>
-        </div>
-        <div id="product-text">
-          <h2>Action movie</h2>
-        </div>
-        <div class="row">
-          <% @films.each do |film| %>
-          <div class="movie">
-            <div class="movie-image">
-              <span class="play">
-                <span class="name"><%= film.name %></span>
-              </span>
-              <%= link_to "#" do %>
-                <%= image_tag film.image %>
-              <% end %>
-            </div>
-          </div>
-          <% end %>
-        </div>
-      <div class="cl">&nbsp;</div>
+      <%= render "static_pages/action_movie" %>
+      <div id="border-film"></div>
+      <%= render "static_pages/romance_movie" %>  
+      <div id="border-film"></div>
+      <%= render "static_pages/cartoon" %> 
     </div>
+  </div>
 <% end %>

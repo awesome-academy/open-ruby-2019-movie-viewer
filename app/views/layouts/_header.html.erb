@@ -1,5 +1,5 @@
 <div id="header">
-  <h1 id="logo"><%= link_to "#" %></h1>
+<%= link_to root_path, id:"logo" do %><% end %>
   <div class="social">
   <% if user_signed_in? %>
     <ul>

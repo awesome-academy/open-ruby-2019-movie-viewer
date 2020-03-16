@@ -7,3 +7,5 @@ most_comment: "movie10.jpg"
 top_rated: "movie2.jpg"
 image_default: "https://ssl.gstatic.com/accounts/ui/avatar_2x.png"
 limmit_category: 25
+category_home: 7
+limit_films: 5

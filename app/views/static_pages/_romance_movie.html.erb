@@ -1,0 +1,30 @@
+<div id="product-text">
+  <%= link_to films_path(category: 1) do %>
+    <h2><%= t ".title" %></h2>
+  <% end %>
+</div>
+<div class="movie-list-index home-v2" >
+  <div class="last-film-box-wrapper">
+    <ul id="movie-last-theater" class="last-film-box">
+      <% @films_romance.each do |film| %>
+        <li>
+          <div class="block-wrapper">
+            <div class="movie-thumbnail ratio-box ratio-3_4">
+              <div class="public-film-item-thumb ratio-content">
+                <%= link_to "#", class: "movie-image" do %>
+                  <span class="play"></span>
+                  <%= image_tag film.image %>
+                <% end %>
+              </div>
+            </div>
+            <div class="movie-meta">
+              <div class="movie-title"><%= film.name %></div>
+              <span class="movie-title-chap"><%= t ".time" %></span>
+              <span class="ribbon"><%= t ".hd" %></span>
+            </div>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
