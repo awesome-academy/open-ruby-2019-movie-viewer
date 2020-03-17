@@ -7,6 +7,7 @@ class Admins::UsersController < Admins::BaseController
 
   def destroy
     @user.destroy
+    
     if @user.destroyed?
       flash[:success] = t ".success_destroy_user"
       redirect_to request.referrer

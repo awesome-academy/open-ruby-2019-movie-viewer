@@ -66,7 +66,7 @@ ActiveRecord::Schema.define(version: 2020_03_11_185319) do
     t.string "resolution"
     t.datetime "release_date"
     t.text "description"
-    t.datetime "time"
+    t.integer "time"
     t.integer "film_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
