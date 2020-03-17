@@ -1,42 +1,46 @@
 <% if admin_signed_in? %>
   <%= render "admins/home" %>
 <% else %>
-  <div id="demo" class="carousel slide" data-ride="carousel">
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <%= image_tag Settings.slide1, class: "d-block w-100" %>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag Settings.slide2, class: "d-block w-100" %>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag Settings.slide3, class: "d-block w-100" %>
-      </div>
-    </div>
-    <%= link_to "#demo", class: "carousel-control-prev", data: {slide: "prev"} do %>
-      <span class="carousel-control-prev-icon"></span>
-    <% end %>
-    <%= link_to "#demo", class: "carousel-control-next", data: {slide: "next"} do %>
-      <span class="carousel-control-next-icon"></span>
-    <% end %>
-  </div>
   <div id="main">
     <div id="content">
-      <div class="box">
-        <%= render "static_pages/lastest_trailer" %>
+      <div class="row">
+        <div class="col-lg-3">
+          <%= render "static_pages/category" %>
+        </div>
+        <div class="col-lg-9">
+          <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <%= image_tag Settings.slide1, class: "d-block img-fluid" %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag Settings.slide2, class: "d-block img-fluid" %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag Settings.slide3, class: "d-block img-fluid" %>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"><%= t ".perious" %></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"><%= t ".next" %></span>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="box">
-        <%= render "static_pages/top_rated" %>
-      </div>
-      <div class="box">
-        <%= render "static_pages/most_comment" %>
-      </div>
+      <%= render "static_pages/action_movie" %>
+      <div id="border-film"></div>
+      <%= render "static_pages/romance_movie" %>  
+      <div id="border-film"></div>
+      <%= render "static_pages/cartoon" %> 
     </div>
-    <div class="cl">&nbsp;</div>
   </div>
 <% end %>

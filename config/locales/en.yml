@@ -36,24 +36,21 @@ en:
         movie: "Movie"
         category: "Category"
   static_pages:
-    lastest_trailer:
-      title: "LASTEST TRAILERS"
-      see_all: "See all"
-      name: "X-MAN"
-      rating: "RATING"
-      number_comment: "12"
-    most_comment:
-      title: "MOST COMMENTD"
-      see_all: "See all"
-      name: "Spider Man"
-      rating: "RATING"
-      number_comment: "12"
-    top_rated:
-      title: "TOP RATED"
-      see_all: "See all"
-      name: "Eagle Eye"
-      rating: "RATING"
-      number_comment: "12"
+    home:
+      perious: "Perious"
+      next: "Next"
+    action_movie:
+      title: "Action movie"
+      time: "95 minutes"
+      hd: "HD-Vietsub"
+    romance_movie:
+      title: "Romance movie"
+      time: "95 minutes"
+      hd: "HD-Vietsub"
+    cartoon:
+      title: "Cartoon"
+      time: "95 minutes"
+      hd: "HD-Vietsub"
   users:
     passwords:
       new:
@@ -245,3 +242,7 @@ en:
         success_destroy_film: "This film was destroyed"
         danger_destroy_film: "You couldn't destroy this film"
         not_found_film: "Not found this film"
+  films:
+    index:
+      time: "95 minutes"
+      hd: "HD-Vietsub"
