@@ -16,4 +16,5 @@ class Film < ApplicationRecord
   validates :name, :movie, :trailer, :image, presence: true
 
   scope :create_at_desc, -> {order created_at: :desc}
+  scope :category_films, -> (category_id){where category_id: category_id}
 end
