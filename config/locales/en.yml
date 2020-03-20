@@ -208,6 +208,7 @@ en:
         movie: "Movie"
         trailer: "Trailer"
         image: "Image"
+        action: "Action"
       create:
         error: "Create error"
         success: "Create successful"
@@ -235,6 +236,17 @@ en:
   films:
     index:
       hd: "HD-Vietsub"
+    show:
+      trailer: "Trailer"
+      actor: "Actor"
+      resolution: "The resolution"
+      date: "Release Date"
+      time: "Time"
+      minutes: "minutes"
+      close: "Close"
+    find_film_profile:
+      not_found: "not found profile film"
   search_films:
     index:
       no_suitable: "Search results do not match: "
+      not_found: "not found film"

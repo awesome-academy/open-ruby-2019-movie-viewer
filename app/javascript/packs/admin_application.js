@@ -6,7 +6,6 @@ require("jquery")
 require("bootstrap")
 require("packs/datatable")
 require("datatables.net-bs4")
-require("packs/list_users")
 require("jquery_ujs")
 import $ from "jquery";
 global.$ = jQuery;

@@ -9,6 +9,14 @@ class FilmsController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @film = Film.find_by id: params[:id]
+
+    return if @film
+    flash[:danger] = t ".not_found"
+    redirect_to root_url
+  end
+
   private
 
   def find_category
