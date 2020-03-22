@@ -51,6 +51,32 @@
           <% end %>
         </div>
       </div>
+      <div class="row bootstrap snippets">
+        <div class="col-md-12 col-sm-12">
+            <div class="comment-wrapper ">
+              <div class="panel panel-primary"> <div class="panel-heading">
+                <h4><%= t ".comment" %></h4>
+                <% if user_signed_in?  %>
+                  <%= render "comments/form" %>
+                <% else %>
+                  <p class="must-login">
+                    <i>
+                      <%= t ".must" %>
+                      <span>
+                        <%= link_to t(".login"), new_user_session_path %>
+                      </span>
+                      <%= t ".to_comment" %>
+                    </i>
+                  </p>
+                <% end %>
+              </div>
+              <div class="panel-body">
+                <%= render "comments/list_comments" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

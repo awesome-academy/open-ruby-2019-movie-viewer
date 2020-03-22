@@ -13,3 +13,5 @@ search_films: 10
 category_home: 7
 release_date: "%d/%m/%Y - %H:%M"
 numericality: 1
+image_default: "https://image.shutterstock.com/z/stock-vector-default-avatar-profile-icon-grey-photo-placeholder-hand-drawn-modern-man-avatar-profile-icon-1545687092.jpg"
+textarea_row: 4
