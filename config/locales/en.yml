@@ -244,9 +244,19 @@ en:
       time: "Time"
       minutes: "minutes"
       close: "Close"
+      not_found: "Not Found Film"
+      vote: "Your vote:"
     find_film_profile:
       not_found: "not found profile film"
+    find_category:
+      not_found_category: "Not Found Category"
   search_films:
     index:
       no_suitable: "Search results do not match: "
       not_found: "not found film"
+  ratings:
+    create:
+      successful: "Add Rating successful"
+      fail: "Ratings fail"
+      loggin: "Please login"
+      not_found: "Not Found"

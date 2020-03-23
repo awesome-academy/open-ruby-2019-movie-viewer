@@ -38,6 +38,18 @@
         <div class="col-sm-3 ">
           <%= @film.film_profile.time %><%= t ".minutes" %>
         </div>
+      </div><br/><br/>
+      <div class= "row">
+        <div class="col-sm-3 text-title">
+          <p><%= t ".vote" %></p>
+        </div>
+        <div class="col-sm-12">
+          <% if current_user %>
+            <%= render "ratings/new" %>
+          <% else %>
+            <div class="my-rating-8"></div>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

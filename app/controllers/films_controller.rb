@@ -11,6 +11,7 @@ class FilmsController < ApplicationController
 
   def show
     @film = Film.find_by id: params[:id]
+    @rating = Rating.new
 
     return if @film
     flash[:danger] = t ".not_found"
