@@ -246,6 +246,10 @@ en:
       close: "Close"
       not_found: "Not Found Film"
       vote: "Your vote:"
+      must: "You must "
+      login: "Log In"
+      to_comment: " to comment this film!"
+      comment: "Comment"
     find_film_profile:
       not_found: "not found profile film"
     find_category:
@@ -260,3 +264,18 @@ en:
       fail: "Ratings fail"
       loggin: "Please login"
       not_found: "Not Found"
+  comments:
+    comment:
+      not_found_user: "Not found user"
+      reply: "Reply"
+      placeholder: "Recomment..."
+    create:
+      danger_comment: "You can't comment"
+      not_found_film: "Not found film"
+    form:
+      button: "Comment"
+      placeholder: "Comment..."
+  reply_comments:
+    create:
+      danger_comment: "You can't comment"
+      not_found_film: "Not found film"

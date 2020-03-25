@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   resources :search_films, only: :index
   resources :films, only: %i(index show)
   resources :ratings, only: %i(new create)
+  resources :comments, only: %i(create)
+  resources :reply_comments, only: %i(create)
 
   namespace :admins do
     resources :users

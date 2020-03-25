@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_13_035048) do
+ActiveRecord::Schema.define(version: 2020_03_25_074257) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -55,11 +55,14 @@ ActiveRecord::Schema.define(version: 2020_03_13_035048) do
   end
 
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "content"
-    t.integer "user_id"
-    t.integer "film_id"
+    t.text "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "reply_comment"
+    t.bigint "user_id"
+    t.bigint "film_id"
+    t.index ["film_id"], name: "index_comments_on_film_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "film_profiles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -107,4 +110,6 @@ ActiveRecord::Schema.define(version: 2020_03_13_035048) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "comments", "films"
+  add_foreign_key "comments", "users"
 end
