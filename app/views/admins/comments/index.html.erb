@@ -1,0 +1,15 @@
+<div class="container">
+  <strong><%= t ".total" %></strong><%= @comments.count :content %>
+  <table id="list_datatable" class="table table-striped table-bordered">
+    <thead>
+      <th><%= t ".id" %></th>
+      <th><%= t ".content" %></th>
+      <th><%= t ".reply" %></th>
+      <th><%= t ".user_id" %></th>
+      <th><%= t ".film_id" %></th>
+    </thead>
+    <tbody>
+      <%= render @comments %>
+    </tbody>
+  </table>
+</div>

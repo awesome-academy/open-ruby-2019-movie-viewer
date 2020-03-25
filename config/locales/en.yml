@@ -263,6 +263,13 @@ en:
         success_destroy_film: "This film was destroyed"
         danger_destroy_film: "You couldn't destroy this film"
         not_found_film: "Not found this film"
+    ratings:
+      index:
+        total: "Total number of stars: "
+        average: "Average of stars: "
+    comments:
+      index:
+        total: "Total number of comments: "
   films:
     index:
       hd: "HD-Vietsub"

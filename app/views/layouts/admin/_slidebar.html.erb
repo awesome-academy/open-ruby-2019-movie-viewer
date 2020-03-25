@@ -28,4 +28,17 @@
     <% end %>
   </li>
   <hr class="sidebar-divider d-none d-md-block">
+   <li class="nav-item collapsed">
+    <%= link_to admins_ratings_path, class: "nav-link collapsed", method: :get do %>
+      <i class="fa fa-star"></i>
+      <span><%= t ".rating" %></span>
+    <% end %>
+  </li>
+  <hr class="sidebar-divider d-none d-md-block">
+   <li class="nav-item collapsed">
+    <%= link_to admins_comments_path, class: "nav-link collapsed", method: :get do %>
+      <i class="fa fa-comment"></i>
+      <span><%= t ".comment" %></span>
+    <% end %>
+  </li>
 </ul>

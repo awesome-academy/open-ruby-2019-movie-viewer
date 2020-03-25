@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_25_074257) do
+ActiveRecord::Schema.define(version: 2020_03_26_123652) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 2020_03_25_074257) do
     t.text "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "reply_comment"
+    t.integer "reply_comment", default: 0
     t.bigint "user_id"
     t.bigint "film_id"
     t.index ["film_id"], name: "index_comments_on_film_id"
@@ -88,10 +88,12 @@ ActiveRecord::Schema.define(version: 2020_03_25_074257) do
 
   create_table "ratings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "star"
-    t.integer "user_id"
-    t.integer "film_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id"
+    t.bigint "film_id"
+    t.index ["film_id"], name: "index_ratings_on_film_id"
+    t.index ["user_id"], name: "index_ratings_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -112,4 +114,6 @@ ActiveRecord::Schema.define(version: 2020_03_25_074257) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "comments", "films"
   add_foreign_key "comments", "users"
+  add_foreign_key "ratings", "films"
+  add_foreign_key "ratings", "users"
 end

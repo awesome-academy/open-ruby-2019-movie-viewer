@@ -14,5 +14,7 @@ Rails.application.routes.draw do
     resources :users
     resources :categories, except: :show
     resources :films
+    resources :ratings, only: :index
+    resources :comments, only: :index
   end
 end
