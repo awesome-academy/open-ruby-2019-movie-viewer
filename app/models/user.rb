@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  USER_PARAMS = %i(fullname avatar email password).freeze
+
   has_many :comments, dependent: :destroy
   has_many :ratings, dependent: :destroy
 
