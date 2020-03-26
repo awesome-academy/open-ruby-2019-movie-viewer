@@ -35,6 +35,9 @@ en:
         title: "Admin Top Movie"
         movie: "Movie"
         category: "Category"
+    login_admin:
+      application:
+        title: "OpenRuby2019MovieViewer"
   static_pages:
     home:
       perious: "Perious"
