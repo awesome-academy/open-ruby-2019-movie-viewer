@@ -1,8 +1,13 @@
 <tr>
   <td><%= category.id %></td>
   <td><%= category.name %></td>
-  <td><%= link_to t(".edit"), edit_admins_category_path(category), class: "btn btn-primary" %></td>
-  <td><%= link_to t(".delete"), admins_category_path(category),
-    method: :delete, data: {confirm: t(".sure")}, class: "btn btn-danger" %>
+  <td class="text-center">
+    <%= link_to edit_admins_category_path(category) do %>
+      <i class="fa fa-edit"></i>
+    <% end %>
+    <%= link_to admins_category_path(category), method: :delete,
+      data: {confirm: t(".sure")} do %>
+      <i class="fa fa-trash"></i>
+    <% end %>
   </td>
 </tr>
